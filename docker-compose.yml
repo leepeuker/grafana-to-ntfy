@@ -7,11 +7,9 @@ services:
     build: .
     env_file:
       - .env
-    # For testing:
-    ports:
-      - 8080:8080
+    networks:
+      - monitoring
 
 networks:
-  default:
-    external:
-      name: caddynet
+  monitoring:
+    name: monitoring
