@@ -8,8 +8,8 @@ services:
     env_file:
       - .env
     networks:
-      - monitoring
+      - opentelemetry
 
 networks:
-  monitoring:
-    name: monitoring
+  opentelemetry:
+    external: true
