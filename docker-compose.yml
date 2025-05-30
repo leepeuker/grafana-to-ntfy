@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  api:
+  grafana-to-ntfy:
     container_name: grafana-to-ntfy
     image: grafana-to-ntfy
     restart: always
